@@ -287,13 +287,13 @@ class Varien_Image_Adapter_Imagemagic extends Varien_Image_Adapter_Abstract
         $wHeight = $watermark->getImageHeight();
 
         //check if watermark is still bigger then image.
-        if ($iHeight < $wHeight || $iWidth < $wWidth) {
+        /*if ($iHeight < $wHeight || $iWidth < $wWidth) {
             // resize the watermark
             $watermark->scaleImage($iWidth, $iHeight);
             // get new size
             $wWidth = $watermark->getImageWidth();
             $wHeight = $watermark->getImageHeight();
-        }
+        }*/
 
         $x = 0;
         $y = 0;
